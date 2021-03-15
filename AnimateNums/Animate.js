@@ -234,6 +234,7 @@ function start()  {
 
 function countNums(){
     var context = document.getElementById("area").getContext("2d");
+    context.fillRect(50,50,100,100);
     if(counter>9){
         context.drawImage(img,scene.frames[1].frame.x,scene.frames[1].frame.y,scene.frames[1].frame.w,scene.frames[1].frame.h,20,50,70,100);
         context.drawImage(img,scene.frames[0].frame.x,scene.frames[0].frame.y,scene.frames[0].frame.w,scene.frames[0].frame.h,90,50,90,100);
