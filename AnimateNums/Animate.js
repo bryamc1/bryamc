@@ -226,7 +226,7 @@ var scene = {
 }
 
 var img=document.createElement('img');
-img.src='AnimateNums/spritesheet (1).png';
+img.src='spritesheet (1).png';
 counter = 0;
 function start()  { 
     var stop = setInterval(countNums,500);
