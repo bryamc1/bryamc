@@ -226,7 +226,7 @@ var scene = {
 }
 
 var img=document.createElement('img');
-img.src='/Users/u7/Downloads/spritesheet (1).png';
+img.src='/bryamc/spritesheet (1).png';
 counter = 0;
 function start()  { 
     var stop = setInterval(countNums,500);
