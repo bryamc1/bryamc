@@ -1,5 +1,5 @@
 var img=document.createElement('img');
-img.src='/Users/u7/Downloads/spritesheet (2).png';
+img.src='spritesheet (2).png';
 var counter = 0;
 
 window.onload = function(){
