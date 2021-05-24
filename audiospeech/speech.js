@@ -40,7 +40,7 @@ function drawImage(image){
     var pic = new Image();
     pic.src = image;
     pic.onload = function(){
-        pic.drawImage(pic, 0, 0);
+        draw.drawImage(pic, 0, 0);
     };
 }
 
