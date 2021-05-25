@@ -34,15 +34,7 @@ var pics = [
     {name: 'car', image: 'pics/car.jpeg'},
     {name: 'myself', image: 'pics/clown.jpeg'}
 ];
-//Function that actually draw image, called on by onresult
-function drawImage(image){
-    draw.clearRect(0,0,canvas.width, canvas.height);
-    var pic = new Image();
-    pic.src = image;
-    pic.onload = function(){
-        draw.drawImage(pic, 0, 0);
-    };
-}
+
 
 //This function takes the result of the user and displays an image accordingly
 recognition.onresult = function(event) {
@@ -64,6 +56,15 @@ recognition.onresult = function(event) {
     }else{
         window.speechSynthesis.speak(new SpeechSynthesisUtterance('No matches'));
         draw.clearRect(0,0,canvas.width, canvas.height);
-        ctx.fillText('Unknown',190,200);
+        draw.fillText('Unknown',190,200);
     }
+}
+//Function that actually draw image, called on by onresult
+function drawImage(image){
+    draw.clearRect(0,0,canvas.width, canvas.height);
+    var pic = new Image();
+    pic.src = image;
+    pic.onload = function(){
+        draw.drawImage(pic, 0, 0);
+    };
 }
